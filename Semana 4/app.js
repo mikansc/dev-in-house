@@ -1,4 +1,4 @@
-// [SP04] 6 - Encontrar as pessoas menores de 18 anos
+// [SP04] 7 - Encontrar uma pessoa de maior
 const lista = [
   {
     nome: "Michael",
@@ -14,7 +14,7 @@ const lista = [
   },
   {
     nome: "Maria",
-    idade: 12,
+    idade: 21,
     telefone: "234-5678",
     profissao: "Programador",
   },
@@ -39,7 +39,12 @@ const soMenoresDeIdade = (listaDePessoas) => {
   return listaDePessoas.filter((pessoa) => pessoa.idade < 18);
 };
 
-console.log(verificarMaioridade(lista));
-console.log(saoTodosProgramadores(lista));
-console.log(listarNomes(lista));
-console.log(soMenoresDeIdade(lista));
+const primeiraComMaisDeDezoito = (listaDePessoas) => {
+  return listaDePessoas.filter((pessoa) => pessoa.idade > 18)[0];
+};
+
+// console.log(verificarMaioridade(lista));
+// console.log(saoTodosProgramadores(lista));
+// console.log(listarNomes(lista));
+// console.log(soMenoresDeIdade(lista));
+console.log(primeiraComMaisDeDezoito(lista));
