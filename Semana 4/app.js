@@ -1,4 +1,4 @@
-// [SP04] 5 - Listar o nome das pessoas
+// [SP04] 6 - Encontrar as pessoas menores de 18 anos
 const lista = [
   {
     nome: "Michael",
@@ -35,6 +35,11 @@ const listarNomes = (listaDePessoas) => {
   return listaDePessoas.map((pessoa) => pessoa.nome);
 };
 
+const soMenoresDeIdade = (listaDePessoas) => {
+  return listaDePessoas.filter((pessoa) => pessoa.idade < 18);
+};
+
 console.log(verificarMaioridade(lista));
 console.log(saoTodosProgramadores(lista));
 console.log(listarNomes(lista));
+console.log(soMenoresDeIdade(lista));
