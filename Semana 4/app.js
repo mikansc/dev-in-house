@@ -1,17 +1,31 @@
-// [SP04] 1 - Cálculo de Média de Notas
-// const arrayDeNotas = [5, 10, 5, 5, 5];
-// const mediaNotas = (listaNotas) => {
-//   let soma = listaNotas.reduce((acc, nota) => acc + nota);
-//   let qtd = listaNotas.length;
-//   console.log("Média: ", soma / qtd);
-// };
-// mediaNotas(arrayDeNotas);
+// [SP04] - 3 - Verificação de Maioridade de Pessoas
 
-// [SP04] - 2 - Quadrado de valores
-const arrayDeNumeros = [2, 3, 4, 11];
-const quadradoDeCadaNumero = (listaDeNumeros) => {
-  listaDeNumeros.forEach((num) => {
-    console.log("O quadrado de", num, "é", num ** 2);
-  });
+const lista = [
+  {
+    nome: "Michael",
+    idade: 16,
+    telefone: "234-5678",
+    profissao: "autonomo",
+  },
+  {
+    nome: "João",
+    idade: 17,
+    telefone: "234-5678",
+    profissao: "estudante",
+  },
+  {
+    nome: "Maria",
+    idade: 12,
+    telefone: "234-5678",
+    profissao: "estudante",
+  },
+];
+
+const verificarMaioridade = (listaDePessoas) => {
+  // retorna o objeto da pessoa maior de idade
+  return listaDePessoas.filter((pessoa) => pessoa.idade > 18);
+  // retorna true se alguém for maior de idade
+  // return listaDePessoas.some((pessoa) => pessoa.idade > 18);
 };
-quadradoDeCadaNumero(arrayDeNumeros);
+
+console.log(verificarMaioridade(lista));
