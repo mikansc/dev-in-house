@@ -1,9 +1,7 @@
-// [SP04] 8 - Multiplicação de Valores da Lista
+// [SP04] 9 - Apresentação de usuário
 
-const lista = [1, 2, 3, 4, 5];
-
-const multiplicarValores = (listaDeValores) => {
-  return listaDeValores.reduce((acc, valor) => acc * valor, 1);
+const apresentarUsuario = (nome, idade) => {
+  console.log(`Olá, eu sou ${nome}, e tenho ${idade} anos.`);
 };
 
-console.log(multiplicarValores(lista));
+apresentarUsuario("Michael", 29);
