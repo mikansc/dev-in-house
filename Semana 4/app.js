@@ -1,23 +1,22 @@
-// [SP04] - 3 - Verificação de Maioridade de Pessoas
-
+// [SP04] 4 - Verificação de Profissão
 const lista = [
   {
     nome: "Michael",
-    idade: 16,
+    idade: 29,
     telefone: "234-5678",
-    profissao: "autonomo",
+    profissao: "Programador",
   },
   {
     nome: "João",
     idade: 17,
     telefone: "234-5678",
-    profissao: "estudante",
+    profissao: "Programador",
   },
   {
     nome: "Maria",
     idade: 12,
     telefone: "234-5678",
-    profissao: "estudante",
+    profissao: "Programador",
   },
 ];
 
@@ -28,4 +27,9 @@ const verificarMaioridade = (listaDePessoas) => {
   // return listaDePessoas.some((pessoa) => pessoa.idade > 18);
 };
 
+const saoTodosProgramadores = (listaDePessoas) => {
+  return listaDePessoas.every((pessoa) => pessoa.profissao === "Programador");
+};
+
 console.log(verificarMaioridade(lista));
+console.log(saoTodosProgramadores(lista));
