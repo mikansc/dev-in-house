@@ -1,4 +1,5 @@
-// [SP04] 5 - Listar o nome das pessoasconst lista = [
+// [SP04] 5 - Listar o nome das pessoas
+const lista = [
   {
     nome: "Michael",
     idade: 29,
