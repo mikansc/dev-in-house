@@ -1,5 +1,4 @@
-// [SP04] 4 - Verificação de Profissão
-const lista = [
+// [SP04] 5 - Listar o nome das pessoasconst lista = [
   {
     nome: "Michael",
     idade: 29,
@@ -31,5 +30,10 @@ const saoTodosProgramadores = (listaDePessoas) => {
   return listaDePessoas.every((pessoa) => pessoa.profissao === "Programador");
 };
 
+const listarNomes = (listaDePessoas) => {
+  return listaDePessoas.map((pessoa) => pessoa.nome);
+};
+
 console.log(verificarMaioridade(lista));
 console.log(saoTodosProgramadores(lista));
+console.log(listarNomes(lista));
