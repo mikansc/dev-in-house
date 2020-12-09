@@ -1,4 +1,4 @@
-// [SP04] 13 - Filtrar Cidades
+// [SP04] 14 - Transformar cidades em uma String concatenada
 
 const lista = [
   { nome: "Joinville", estado: "SC" },
