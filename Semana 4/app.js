@@ -1,6 +1,14 @@
-// [SP04] 12 - Impressão de Endereço
-const imprimirEndereço = (bairro, cidade, estado) => {
-  console.log(`Bairro ${bairro} - ${cidade}, ${estado}`);
+// [SP04] 13 - Filtrar Cidades
+
+const lista = [
+  { nome: "Joinville", estado: "SC" },
+  { nome: "Florianópolis", estado: "SC" },
+  { nome: "São Paulo", estado: "SP" },
+  { nome: "Recife", estado: "PE" },
+];
+
+const filtrarCidadesDeSC = (listaDeCidades) => {
+  return listaDeCidades.filter((cidade) => cidade.estado === "SC");
 };
 
-imprimirEndereço("Iririu", "Joinville", "SC");
+console.log(filtrarCidadesDeSC(lista));
