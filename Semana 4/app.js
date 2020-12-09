@@ -1,31 +1,22 @@
-// [SP04] 16 - Desmontar entidade
+// [SP04] 17 - Ranking de Livros mais Vendidos
 
-const lista = [
-  { nome: "Joinville", estado: "SC" },
-  { nome: "Florianópolis", estado: "SC" },
-  { nome: "São Paulo", estado: "SP" },
-  { nome: "Recife", estado: "PE" },
-  { nome: "Porto Alegre", estado: "RS" },
+const osLivros = [
+  "Speaking Javascript - An in-depth guide for programers",
+  "Learning React - Functional web development with React and Redux",
+  "Cangaceiro Javascript - Uma aventura no sertão da programação",
+  "Um livro",
+  "Mais um livro",
+  "Outro livro",
+  "Não sei que livro",
+  "Último livro",
 ];
 
-const filtrarCidadesDeSC = (listaDeCidades) => {
-  return listaDeCidades.filter((cidade) => cidade.estado === "SC");
+const rankingMaisVendidos = (listaDeLivros) => {
+  const [primeiro, segundo, terceiro, ...demaisLivros] = listaDeLivros;
+  console.log("Primeiro lugar:", primeiro);
+  console.log("Segundo lugar:", segundo);
+  console.log("Terceiro lugar:", terceiro);
+  console.log(("Demais livros:", demaisLivros));
 };
 
-const concatenaCidadeEstado = (listaDeCidades) => {
-  return listaDeCidades.map((cidade) => `${cidade.nome}, ${cidade.estado}.`);
-};
-
-const temCidadeDoRS = (listaDeCidades) => {
-  return listaDeCidades.some((cidade) => cidade.estado === "RS");
-};
-
-const desestruturarCidade = (cidade) => {
-  const { nome, estado } = cidade;
-  console.log(nome, estado);
-};
-
-// console.log(filtrarCidadesDeSC(lista));
-// console.log(concatenaCidadeEstado(lista));
-// console.log(temCidadeDoRS(lista));
-desestruturarCidade(lista[2]);
+rankingMaisVendidos(osLivros);
