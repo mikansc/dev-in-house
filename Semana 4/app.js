@@ -1,7 +1,15 @@
-// [SP04] 9 - Apresentação de usuário
+// [SP04] 10 - Soma com resultado Par
 
-const apresentarUsuario = (nome, idade) => {
-  console.log(`Olá, eu sou ${nome}, e tenho ${idade} anos.`);
+const somaComResultadoPar = (num1, num2) => {
+  return new Promise((resolve, reject) => {
+    let soma = num1 + num2;
+    if (soma % 2 === 0) {
+      resolve("Resultado é par");
+    } else {
+      reject("Resultado é ímpar");
+    }
+  });
 };
 
-apresentarUsuario("Michael", 29);
+somaComResultadoPar(2, 4).then((res) => console.log(res));
+somaComResultadoPar(2, 3).catch((err) => console.log(err));
