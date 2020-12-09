@@ -1,4 +1,5 @@
-// [SP04] 15 - Verificar existência de Estado
+// [SP04] 16 - Desmontar entidade
+
 const lista = [
   { nome: "Joinville", estado: "SC" },
   { nome: "Florianópolis", estado: "SC" },
@@ -19,6 +20,12 @@ const temCidadeDoRS = (listaDeCidades) => {
   return listaDeCidades.some((cidade) => cidade.estado === "RS");
 };
 
-console.log(filtrarCidadesDeSC(lista));
-console.log(concatenaCidadeEstado(lista));
-console.log(temCidadeDoRS(lista));
+const desestruturarCidade = (cidade) => {
+  const { nome, estado } = cidade;
+  console.log(nome, estado);
+};
+
+// console.log(filtrarCidadesDeSC(lista));
+// console.log(concatenaCidadeEstado(lista));
+// console.log(temCidadeDoRS(lista));
+desestruturarCidade(lista[2]);
