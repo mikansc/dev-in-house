@@ -1,9 +1,6 @@
-// [SP04] 11 - Cálculo de área de um Retângulo
-
-const retangulo = { base: 4, altura: 12 };
-
-const areaRetangulo = (objRetangulo) => {
-  return objRetangulo.base * objRetangulo.altura;
+// [SP04] 12 - Impressão de Endereço
+const imprimirEndereço = (bairro, cidade, estado) => {
+  console.log(`Bairro ${bairro} - ${cidade}, ${estado}`);
 };
 
-console.log(areaRetangulo(retangulo));
+imprimirEndereço("Iririu", "Joinville", "SC");
