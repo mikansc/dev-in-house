@@ -1,0 +1,13 @@
+// GET /restaurantes?status=disponivel
+
+// HTTP 200 OK
+{
+  "status": 200,
+  "result": [
+    { "nome": "Restaurante A", "status": "disponivel" },
+    { "nome": "Restaurante D", "status": "disponivel" },
+    { "nome": "Restaurante F", "status": "disponivel" }
+  ]
+}
+
+// ----- //
