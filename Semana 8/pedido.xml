@@ -1,0 +1,21 @@
+<pedido id="1" vlr_total="R$ 48,00" data="2021-01-25">
+  <cliente>
+    <nome>Michael Nascimento</nome>
+    <endereco>Rua XYZ, 200 - Bairro Novo - SC</endereco>
+    <telefone>(47) 997727790</telefone>
+  </cliente>
+  <produtos>
+    <produto id="22">
+      <titulo>Pizza de calabresa</titulo>
+      <descricao>Molho de tomate, calabresa, queijo mussarela e cebola</descricao>
+      <quantidade>1</quantidade>
+      <valor>R$ 36,00</valor>
+    </produto>
+    <produto id="154">
+      <titulo>Coca-cola 2L Tradicional</titulo>
+      <descricao>Coca-cola 2L Tradicional</descricao>
+      <quantidade>1</quantidade>
+      <valor>R$ 12,00</valor>
+    </produto>
+  </produtos>
+</pedido>
