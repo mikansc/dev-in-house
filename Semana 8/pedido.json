@@ -1,0 +1,29 @@
+{
+  "pedido": {
+    "$id": 1,
+    "vlr_total": "R$ 48,00",
+    "data": "2021-01-25",
+    "cliente": {
+      "$id": 228,
+      "nome": "Michael Nascimento",
+      "endereco": "Rua XYZ, 200 - Bairro Novo - SC",
+      "telefone": "(47) 997727790"
+    },
+    "produtos": [
+      {
+        "$id": 22,
+        "titulo": "Pizza de calabresa",
+        "descricao": "Molho de tomate, calabresa, queijo mussarela e cebola",
+        "quantidade": 1,
+        "valor": "R$ 36,00"
+      },
+      {
+        "$id": 154,
+        "titulo": "Coca-cola 2L Tradicional",
+        "descricao": "Coca-cola 2L Tradicional",
+        "quantidade": 1,
+        "valor": "R$ 12,00"
+      }
+    ]
+  }
+}
