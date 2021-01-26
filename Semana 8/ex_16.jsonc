@@ -4,9 +4,9 @@
 {
   "status": 200,
   "result": [
-    { "nome": "Restaurante A", "status": "disponivel" },
-    { "nome": "Restaurante D", "status": "disponivel" },
-    { "nome": "Restaurante F", "status": "disponivel" }
+    { "$id": 1, "nome": "Restaurante A", "status": "disponivel" },
+    { "$id": 2, "nome": "Restaurante D", "status": "disponivel" },
+    { "id": 3, "nome": "Restaurante F", "status": "disponivel" }
   ]
 }
 
