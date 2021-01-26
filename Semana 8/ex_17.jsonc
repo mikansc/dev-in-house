@@ -1,0 +1,29 @@
+// GET /restaurantes/12345678/produtos}
+
+// HTTP 200 OK
+{
+  "status": 200,
+  "result": [
+    {
+      "$id": 12345678,
+      "nome": "Restaurante A",
+      "status": "disponivel",
+      "produtos": [
+        {
+          "$id": 1,
+          "produto": "Item 1",
+          "categoria": "entrada",
+          "valor": "R$ 99,99"
+        },
+        {
+          "$id": 2,
+          "produto": "Item 2",
+          "categoria": "bebidas",
+          "valor": "R$ 99,99"
+        }
+      ]
+    }
+  ]
+}
+
+// ----- //
