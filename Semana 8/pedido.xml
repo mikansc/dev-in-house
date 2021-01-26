@@ -1,5 +1,5 @@
 <pedido id="1" vlr_total="R$ 48,00" data="2021-01-25">
-  <cliente>
+  <cliente id="228">
     <nome>Michael Nascimento</nome>
     <endereco>Rua XYZ, 200 - Bairro Novo - SC</endereco>
     <telefone>(47) 997727790</telefone>
