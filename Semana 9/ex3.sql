@@ -57,7 +57,8 @@ INSERT INTO estudantes
   matricula,
   email, 
   data_nascimento,
-  nacionalidade, 
+  nacionalidade,
+  media_geral,
   etc 
 )
 VALUES 
@@ -68,6 +69,7 @@ VALUES
   "michael.nsc@outlook.com",
   "1991-01-29",
   "Brasileiro",
+  7.75,
   "Sou músico"
 ),
 (
@@ -77,6 +79,7 @@ VALUES
   "mauricio.sampaio@email.com",
   "1988-06-20",
   "Brasileiro",
+  9.20,
   "DevOps é vida"
 ),
 (
@@ -86,6 +89,7 @@ VALUES
   "manu.figueiredo@email.com",
   "1988-02-01",
   "Brasileiro",
+  8.75,
   "Não escutem o michael"
 );
 
