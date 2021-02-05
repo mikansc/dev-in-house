@@ -21,6 +21,7 @@ CREATE TABLE estudantes
           email VARCHAR(100) NOT NULL,
           data_nascimento DATE NOT NULL,
           nacionalidade VARCHAR(50) NOT NULL,
+          media_geral DECIMAL(3,2) NOT NULL,
           etc VARCHAR(100),
           PRIMARY KEY (id)
         );
