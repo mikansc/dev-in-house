@@ -217,3 +217,5 @@ VALUES (
 SELECT * FROM cursos WHERE `EAD`= false AND max_alunos > 30;
 
 UPDATE estudantes SET media_geral = 8.75 WHERE nome = "Augusto" AND sobrenome = "Otavio";
+
+DELETE FROM cursos WHERE nome = "DEVInHouse React";

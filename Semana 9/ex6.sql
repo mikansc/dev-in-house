@@ -1,0 +1,1 @@
+DELETE FROM cursos WHERE nome = "DEVInHouse React";
