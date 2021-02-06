@@ -227,3 +227,8 @@ IN ("Argentina", "Bolívia", "Brasil",
  "Chile", "Colômbia", "Equador", 
  "Guiana", "Paraguai", "Peru", 
  "Suriname", "Uruguai", "Venezuela");
+
+SELECT * 
+FROM estudantes 
+WHERE nome 
+LIKE "J%";
