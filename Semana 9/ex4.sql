@@ -1,0 +1,1 @@
+SELECT * FROM cursos WHERE `EAD`= false AND max_alunos > 30;

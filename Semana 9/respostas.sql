@@ -213,3 +213,5 @@ VALUES (
   24,
   3
 );
+
+SELECT * FROM cursos WHERE `EAD`= false AND max_alunos > 30;
