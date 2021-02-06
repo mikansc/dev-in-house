@@ -1,0 +1,1 @@
+UPDATE estudantes SET media_geral = 8.75 WHERE nome = "Augusto" AND sobrenome = "Otavio";
