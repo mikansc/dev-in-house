@@ -1,4 +1,4 @@
-CREATE TABLE professores
+CREATE TABLE IF NOT EXISTS professores
 				(
           id INT NOT NULL AUTO_INCREMENT,
           nome VARCHAR(100) NOT NULL,
@@ -8,11 +8,10 @@ CREATE TABLE professores
           email VARCHAR(100) NOT NULL,
           data_nascimento DATE NOT NULL,
           nacionalidade VARCHAR(50) NOT NULL,
-          etc VARCHAR(100),
           PRIMARY KEY (id)
         );
         
-CREATE TABLE estudantes
+CREATE TABLE IF NOT EXISTS estudantes
         (
           id INT NOT NULL AUTO_INCREMENT,
           nome VARCHAR(100) NOT NULL,
@@ -22,17 +21,15 @@ CREATE TABLE estudantes
           data_nascimento DATE NOT NULL,
           nacionalidade VARCHAR(50) NOT NULL,
           media_geral DECIMAL(3,2) NOT NULL,
-          etc VARCHAR(100),
           PRIMARY KEY (id)
         );
                 
-CREATE TABLE cursos
+CREATE TABLE IF NOT EXISTS cursos
         (
           id INT NOT NULL AUTO_INCREMENT,
           codigo VARCHAR(100) NOT NULL,
           nome VARCHAR(100) NOT NULL,
           EAD BOOLEAN NOT NULL DEFAULT TRUE,
-          etc VARCHAR(100),
           max_alunos INT NOT NULL,
           id_professor INT NOT NULL,
           PRIMARY KEY (id),

@@ -1,23 +1,22 @@
-INSERT INTO professores
+INSERT INTO professores 
 (
-  nome,
-  sobrenome,
-  endereco,
-  telefone,
-  email,
-  data_nascimento,
-  nacionalidade,
-  etc
+  nome, 
+  sobrenome, 
+  endereco, 
+  telefone, 
+  email, 
+  data_nascimento, 
+  nacionalidade
 ) 
-VALUES (
+VALUES 
+  (
   "João",
   "Oliveira",
   "Rua 123 n 4 - Jd Cinco - Florianópolis, SC",
   "(47) 91234-5678",
   "joao.oliveira@email.com",
   "1990-02-22",
-  "Brasileira",
-  "Nenhuma obs"
+  "Brasil"
   ),
   (
   "Leonardo",
@@ -26,8 +25,7 @@ VALUES (
   "(47) 91234-5678",
   "leonardobiazus@email.com",
   "1988-01-30",
-  "Brasileira",
-  "Nenhuma obs"
+  "Brasil"
   ),
   (
   "Henrique",
@@ -36,8 +34,7 @@ VALUES (
   "(47) 91234-5678",
   "henriqueblanck@email.com",
   "1991-06-30",
-  "Brasileira",
-  "Nenhuma obs"
+  "Brasil"
   ),
   (
   "Marcus",
@@ -46,8 +43,25 @@ VALUES (
   "(47) 91234-5678",
   "marcusantunes@email.com",
   "1986-08-20",
-  "Brasileira",
-  "Nenhuma obs"
+  "Brasil"
+  ),
+  (
+  "Juan",
+  "Pablo",
+  "St 456 n 7 - Uruguay",
+  "(47) 91234-5678",
+  "pablo.juan@email.com",
+  "1959-01-12",
+  "Uruguai"
+  ),
+  (
+  "Fugiro",
+  "Nakombi",
+  "Rua 123 n 4 - Jd Cinco - Florianópolis, SC",
+  "(47) 91234-5678",
+  "fugironakombi@gmail.com",
+  "1998-04-29",
+  "Japão"
   );
 
 INSERT INTO estudantes
@@ -58,8 +72,7 @@ INSERT INTO estudantes
   email, 
   data_nascimento,
   nacionalidade,
-  media_geral,
-  etc 
+  media_geral
 )
 VALUES 
 (
@@ -68,9 +81,8 @@ VALUES
   0010001,
   "michael.nsc@outlook.com",
   "1991-01-29",
-  "Brasileiro",
-  7.75,
-  "Sou músico"
+  "Brasil",
+  7.75
 ),
 (
   "Maurício",
@@ -78,9 +90,8 @@ VALUES
   0010002,
   "mauricio.sampaio@email.com",
   "1988-06-20",
-  "Brasileiro",
-  9.20,
-  "DevOps é vida"
+  "Brasil",
+  9.20
 ),
 (
   "Emanuelle",
@@ -88,9 +99,26 @@ VALUES
   0010003,
   "manu.figueiredo@email.com",
   "1988-02-01",
-  "Brasileiro",
-  8.75,
-  "Não escutem o michael"
+  "Brasil",
+  8.75
+),
+(
+  "Augusto",
+  "Otavio",
+  0010004,
+  "augusto@otavio.com",
+  "1987-02-01",
+  "México",
+  6.75
+),
+(
+  "Mijaro",
+  "Nomuro",
+  0010005,
+  "nomuro@gmail.com",
+  "1978-02-27",
+  "Japão",
+  9.99
 );
 
 INSERT INTO cursos
@@ -98,39 +126,48 @@ INSERT INTO cursos
   codigo,
   nome,
   EAD,
-  etc,
   max_alunos,
   id_professor
 )
 VALUES (
-  0010001,
+  0030001,
   "DEVInHouse Javascript",
   true,
-  "DEVInHouse Softplan - Curso em parceria com SENAI e ACATE",
   40,
   1
 ),
 (
-  0010001,
+  0030002,
   "DEVInHouse React",
   true,
-  "DEVInHouse Softplan - Curso em parceria com SENAI e ACATE",
   40,
   2
 ),
 (
-  0010001,
+  0030003,
   "DEVInHouse Arquitetura de Software",
   true,
-  "DEVInHouse Softplan - Curso em parceria com SENAI e ACATE",
   40,
   4
 ),
 (
-  0010001,
+  0030004,
   "SENAI Metodologia Ágil",
   true,
-  "Dailys em grupo todos os dias",
   5,
+  3
+),
+(
+  0030005,
+  "SENAI Tecnologia da Informação",
+  false,
+  48,
+  1
+),
+(
+  0030006,
+  "SENAI Comunicação Empresarial",
+  false,
+  24,
   3
 );
