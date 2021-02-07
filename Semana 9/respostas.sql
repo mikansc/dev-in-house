@@ -292,3 +292,8 @@ ADD id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
 
 ALTER TABLE cursos
 ADD FOREIGN KEY (id_professor) REFERENCES professores(id);
+
+SELECT cursos.*
+FROM cursos
+INNER JOIN professores ON cursos.id_professor = professores.id
+WHERE professores.sexo = "F"
