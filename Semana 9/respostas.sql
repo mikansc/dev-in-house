@@ -289,3 +289,6 @@ VALUES (
 
 ALTER TABLE estudantes_cursos
 ADD id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+
+ALTER TABLE cursos
+ADD FOREIGN KEY (id_professor) REFERENCES professores(id);
